@@ -1,9 +1,10 @@
-f = open('txt/day1.txt', 'r')
+import sys
+D = open(sys.argv[1]).read().strip()
 
 r1 = 0
 r2 = 0
 
-for line in f:
+for line in D.split('\n'):
     r1_digits = []
     r2_digits = []
     for i, letter in enumerate(line):

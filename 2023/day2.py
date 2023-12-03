@@ -1,11 +1,11 @@
-import re
-f = open('txt/day2.txt', 'r')
+import re, sys
+D = open(sys.argv[1]).read().strip()
 result_1 = 0
 result_2 = 0
 red = 0
 green = 0
 blue = 0
-for line in f:
+for line in D.split('\n'):
     ok = True
     red_array = []
     green_array = []
